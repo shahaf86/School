@@ -3,14 +3,17 @@
     <style>
 
     </style>
-    <script>
-        document.cookie = name = name ; expires=" + "Mon, 11 Apr 2016 23:59:59 GMT; path=/;
-    </script>
   </head>
   <body>
-    <div><span>Name: </span><input type = "text" name = "name" /></div>
-    <div><span>Email: </span><input type = "text" name = "email" /></div>
-    <div><span>Age: </span><input type = "text" name = "age" /></div>
+    <div><span>Name: </span><input type = "text" id = "name" /></div>
+    <div><span>Email: </span><input type = "text" id = "email" /></div>
+    <div><span>Age: </span><input type = "text" id = "age" /></div>
     <a href = "nextPage.html">Submit</a>
+    <script>
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var age = document.getElementById("age");
+        document.cookie = "name" = name ; expires=" + "Mon, 11 Apr 2016 23:59:59 GMT; path=/;
+    </script>
   </body>
 </html>
