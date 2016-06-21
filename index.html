@@ -6,9 +6,9 @@
 <script language="javascript">
     $.ajax({
       type: 'GET',
-      url: 'https://www.whoisxmlapi.com/whoisserver/WhoisService',
+      url: 'https://www.whoisxmlapi.com/whoisserver/WhoisService?',
       data: {'cmd': 'GET_DN_AVAILABILITY', 'domainName':'test.com', 'username': 'shahaf', 'password': 'shahaf1986', 'getMode': 'DNS_AND_WHOIS'},
-      dataType: 'jsonp',
+      dataType: 'xml',
       success : function(response){
           $("result").innerHTML = "worked";
       }
