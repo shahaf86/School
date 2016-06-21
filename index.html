@@ -4,7 +4,6 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script language="javascript">
-  $("#Submit").click(function(){
     $.ajax({
       type: 'GET',
       url: 'https://www.whoisxmlapi.com/whoisserver/WhoisService',
@@ -14,7 +13,6 @@
           $("result").innerHTML = "worked";
       }
     });
-  });
 </script>
 </head>
 <body>
