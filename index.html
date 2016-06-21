@@ -8,7 +8,7 @@
       type: 'GET',
       url: 'https://www.whoisxmlapi.com/whoisserver/WhoisService?',
       data: {'cmd': 'GET_DN_AVAILABILITY', 'domainName':'www.walla.co.il', 'username': 'shahaf', 'password': 'shahaf1986', 'getMode': 'DNS_AND_WHOIS', 'outputFormat': 'json'},
-      dataType: 'jsonp',
+      dataType: 'json',
       success : function(){
           $("result").innerHTML = "worked";
       }
