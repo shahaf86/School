@@ -9,6 +9,7 @@
   <body>
     <p></p>
     <script>
+      $("p").innerHTML = navigator.userAgent;
       $(document).ready(function(){
         if($(window).width() < 767){
           var a = navigator.userAgent.split(";");
