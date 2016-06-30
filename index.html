@@ -9,12 +9,12 @@
   <body>
     <p></p>
     <script>
-      $("p").innerHTML = navigator.userAgent;
+      $("p").html(navigator.userAgent);
       $(document).ready(function(){
         if($(window).width() < 767){
           var a = navigator.userAgent.split(";");
           if(a[0] == "iPhone"){
-            $("p").innerHTML = "Working!";
+            $("p").html(navigator.userAgent);
             //console.log("working!");
           }
           if(a[0] == "");
