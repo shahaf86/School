@@ -7,12 +7,14 @@
     </style>
   </head>
   <body>
+    <p></p>
     <script>
       $(document).ready(function(){
         if($(window).width() < 767){
           var a = navigator.userAgent.split(";");
           if(a[0] == "iPhone"){
-            console.log("working!");
+            $("p").innerHTML = "Working!";
+            //console.log("working!");
           }
           if(a[0] == "");
         }
