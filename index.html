@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Learning 3D Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="login-screen" id="loginScreen">
+            <div class="login-form">
+                <h2>🌟 Welcome Little Learner!</h2>
+                <p>What's your name?</p>
+                <input type="text" id="playerName" placeholder="Enter your name" maxlength="20">
+                <button class="login-btn" onclick="login()">🚀 Start Playing!</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1 class="title">🌟 Fun Learning Adventure 🌟</h1>
+            <div class="player-info">
+                <span id="playerNameDisplay"></span>
+                <div class="score">Score: <span id="score">0</span></div>
+                <button class="logout-btn" onclick="logout()">👋 Change Player</button>
+            </div>
+        </div>
+
+        <div class="menu-screen" id="menuScreen">
+            <div class="game-selector">
+                <h2>Choose Your Adventure!</h2>
+                <div class="game-buttons">
+                    <button class="game-btn" onclick="startGame('numbers')">
+                        <div class="btn-3d">🔢 Number Fun</div>
+                    </button>
+                    <button class="game-btn" onclick="startGame('letters')">
+                        <div class="btn-3d">🔤 Letter Quest</div>
+                    </button>
+                    <button class="game-btn" onclick="startGame('colors')">
+                        <div class="btn-3d">🎨 Color Match</div>
+                    </button>
+                    <button class="game-btn" onclick="startGame('shapes')">
+                        <div class="btn-3d">⭐ Shape Hunt</div>
+                    </button>
+                </div>
+                
+                <div class="scores-table">
+                    <h3>🏆 Your Scores</h3>
+                    <table id="scoresTable">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Total Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scoresBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-screen" id="gameScreen">
+            <div class="question-area">
+                <div class="question-3d" id="question"></div>
+            </div>
+            
+            <div class="answers-grid" id="answersGrid"></div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <button class="back-btn" onclick="backToMenu()">🏠 Back to Menu</button>
+        </div>
+
+        <div class="celebration" id="celebration">
+            <div class="celebration-content">
+                <div class="star-burst">⭐</div>
+                <h2>Great Job!</h2>
+                <div class="emoji-rain">🎉🌟🎊✨</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
